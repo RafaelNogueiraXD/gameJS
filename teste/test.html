@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script src="https://code.jquery.com/jquery-1.12.3.js" integrity="sha256-1XMpEtA4eKXNNpXcJ1pmMPs8JV+nwLdEqwiJeCQEkyc=" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+  body{
+      background-color: rgba(0, 0, 0, 0.89);
+      color: white;
+  }
+  canvas{
+      border: 1px solid white;
+      background-color: rgb(244, 247, 86);
+      margin-left: 10%;
+      /* width: 80%; */
+      margin-top: 0%;
+  }
+  </style>
+<body>
+  <canvas width="1400" height="832.5" id="cnv"></canvas>
+    
+</body>
+<script>
+    var nova = false;
+   document.body.addEventListener('keydown', function (event) {
+     var canvas = $("#cnv")[0];
+     var ctx = canvas.getContext("2d");
+     ctx.font = "50px serif";
+     ctx.fillStyle = "#ccc";
+  
+  
+      var tempo = 0;
+  
+        setInterval(a,1000);
+        a();
+        function getRandomInt(min, max){
+                // function getRandomInt() {
+                 
+                    min = Math.ceil(min);
+                    max = Math.floor(max);
+                    var speed =  (Math.floor(Math.random() * (max - min)) + min);
+                    return speed;
+            }
+            function a(){
+                if(tempo < 5000){
+                  tempo++;
+                  ctx.fillText(tempo,200,100);
+                }
+                
+            }
+   });
+  
+</script>
+</html>

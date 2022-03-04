@@ -1,0 +1,42 @@
+body{
+    background-color: rgba(0, 0, 0, 0.89);
+    color: white;
+}
+canvas{
+    border: 1px solid white;
+    background-color: rgb(244, 247, 86);
+    /* margin-left: 10%; */
+    /* width: 80%; */
+    margin-top: 0%;
+}
+button{
+    background-color: blue;
+    padding: 10px;
+    border: 1px solid blue;
+    color: white;
+    border-radius: 10px;
+    width: 100px;
+    height: 40px;
+}
+#dialogoverlay{
+	display: none;
+	opacity: .8;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	background: black;
+	width: 100%;
+	z-index: 10;
+}
+#dialogbox{
+	display: none;
+	position: fixed;
+	background: #000;
+	border-radius:7px; 
+	width:550px;
+	z-index: 10;
+}
+#dialogbox > div{ background:#FFF; margin:8px; }
+#dialogbox > div > #dialogboxhead{ background: #666; font-size:19px; padding:10px; color:#CCC; }
+#dialogbox > div > #dialogboxbody{ background:#333; padding:20px; color:#FFF; }
+#dialogbox > div > #dialogboxfoot{ background: #666; padding:10px; text-align:right; }
